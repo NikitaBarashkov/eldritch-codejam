@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+    background-image: url('../assets/home.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 2%;
+    justify-content: space-around;
+}
+
+.ancient {
+  width: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  row-gap: 25px;
+  justify-content: space-between;
+  
+}
+
+
+.box_oldmen {
+  width: 300px;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-size: contain;
+}
+
+.cheked-oldmen {
+  border: 3px solid #db0000;
+}
+
+.box_oldmen:nth-of-type(1) {
+  background-image: url('../assets/Ancients/Azathoth.png');
+}
+
+.box_oldmen:nth-of-type(2) {
+  background-image: url('../assets/Ancients/Cthulthu.png');
+}
+
+.box_oldmen:nth-of-type(3) {
+  background-image: url('../assets/Ancients/IogSothoth.png');
+}
+
+.box_oldmen:nth-of-type(4) {
+  background-image: url('../assets/Ancients/ShubNiggurath.png');
+}
+
+.box_oldmen:hover {
+  cursor: pointer;
+  border: 3px solid #db0000;
+}
+
+.fake-radio {
+  visibility: hidden;
+}
+
+.game-level {
+  border: 5px solid #785;
+  font-size: 3em;
+  background: #666;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.level-box{
+  display: none;
+}
+
+.level-box__active {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-level:hover {
+  cursor: pointer;
+}
+
+
+.game-level__active {
+  background-color: #db0000;
+}
+
+.start-game {
+  display: none;
+  font-size: 2em;
+  background: transparent;
+  border-radius: 15px;
+  color: #fff;
+  padding: 10px;
+  border: 3px solid #fff;
+}
+
+.start-game:hover {
+  cursor: pointer;
+  color:#db0000;
+  border: 3px solid #db0000;;
+  transition: all 1s;
+}
+
+.active {
+  display: block;
+}
+
+.stage {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.num-stage {
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  color: #fff;
+  text-align: center;
+}
+
+.stage_block__cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cards {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+
+.green {
+  background-color: rgb(14, 180, 42);
+  font-size: 35px;
+  color: #fff;
+}
+.brown {
+  background-color: rgb(180, 73, 2);
+  font-size: 35px;
+  color: #fff;
+}
+.blue {
+  background-color: rgb(20, 17, 201);
+  font-size: 35px;
+  color: #fff;
+}
+
+.card-block {
+  display: none;
+}
+
+.card-block:hover {
+  cursor: pointer;
+  border: 2px solid #785;
+}
+
+.active {
+  display: block;
+}
+
+.disactive {
+  display: none;
+}
